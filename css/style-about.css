@@ -118,3 +118,11 @@ body {
     font-size: 0.9em;
     color: #555;
 }
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+}
