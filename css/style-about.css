@@ -126,3 +126,27 @@ footer {
     color: white;
     position: relative;
 }
+
+.element {
+    width: 50vw; 
+    height: 100vh; 
+    font-size: 1rem; 
+    padding: 1em; 
+    background-color: #f4f4f4; 
+    color: #333; 
+}
+
+@media (max-width: 768px) {
+    .element {
+        width: 100%; 
+        font-size: 14px; 
+        padding: 20px; 
+    }
+}
+
+@media (min-width: 789px) and (max-width: 1024px) {
+    .element {
+        width: 50%;
+        font-size: 16px; 
+    }
+}
