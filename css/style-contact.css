@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #333; 
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    margin: 0 20px; 
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff; 
+    padding: 10px 20px; 
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #0db4c1; 
+    color: #fff; 
+}
+
+.menu-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 35px;
+    height: 30px;
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    cursor: pointer;
+    z-index: 1000; 
+}
+
+.menu-line {
+    background-color: #ec2e2e;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+.menu-toggle {
+    display: none; 
+}
+.menu-toggle:checked ~ .menu {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .menu-button {
+        display: flex; 
+    }
+    .menu {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #333; 
+    }
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu ul li {
+        margin: 10px 0;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 50px ;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+input, textarea {
+    width: 100%;
+    border: 1px solid #ddd;  
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+input:focus, textarea:focus {
+    border-color: #4CAF50;
+}
+button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #45a049;
+}
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+
+.element {
+    width: 50vw; 
+    height: 100vh; 
+    font-size: 1rem; 
+    padding: 1em; 
+    background-color: #f4f4f4; 
+    color: #333; 
+}
+
+@media (max-width: 768px) {
+    .element {
+        width: 100%; 
+        font-size: 14px; 
+        padding: 20px; 
+    }
+}
+
+@media (min-width: 789px) and (max-width: 1024px) {
+    .element {
+        width: 50%;
+        font-size: 16px; 
+    }
+}
